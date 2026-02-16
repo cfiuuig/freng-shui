@@ -1,0 +1,118 @@
+.header {
+    border: 1px solid var(--d-gray);
+    padding: 24px 0;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-logo,
+.header__nav-item_link {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.734rem + 0.71vw, 1.5rem);
+    color: var(--d-gray);
+}
+
+.header__nav-list {
+    display: flex;
+    gap: clamp(1.25rem, -0.164rem + 7.07vw, 7.5rem);
+    align-items: center;
+}
+
+.header__nav-icons {
+    display: flex;
+    gap: clamp(1.5rem, 0.991rem + 2.55vw, 3.75rem);
+    align-items: center;
+}
+
+.header__nav-icon svg {
+    width: clamp(0.875rem, 0.762rem + 0.57vw, 1.375rem);
+}
+
+.header__nav-item_link {
+    font-size: clamp(0.75rem, 0.58rem + 0.85vw, 1.5rem);
+}
+
+.burger,
+#burger-toggle,
+.menu-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width:630px) {
+
+    .burger {
+        display: block;
+        flex-direction: column;
+        width: clamp(0.75rem, -0.5rem + 6.25vw, 1.375rem);
+        height: clamp(0.75rem, -0.25rem + 5vw, 1.25rem);
+        position: relative;
+        cursor: pointer;
+    }
+
+    .burger span {
+        position: absolute;
+        width: 100%;
+        height: clamp(0.125rem, 0.63vw, 0.188rem);
+        background: var(--d-gray);
+        left: 0;
+        transition: 0.3s;
+        border: 10px;
+    }
+
+    .burger span:nth-child(1) {
+        top: clamp(-0.125rem, -0.375rem + 1.25vw, 0rem);
+    }
+
+    .burger span:nth-child(2) {
+        top: clamp(0.25rem, -0.25rem + 2.5vw, 0.5rem);
+    }
+
+    .burger span:nth-child(3) {
+        top: clamp(0.625rem, -0.125rem + 3.75vw, 1rem);
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger-toggle:checked+.burger span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    .menu-mobile {
+        display: none;
+        gap: clamp(0.625rem, -0.02rem + 3.23vw, 1.25rem);
+        position: absolute;
+        top: 46px;
+        right: 0;
+        background: var(--d-white);
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        border: 1px solid var(--d-gray);
+        border-top: none;
+    }
+
+    #burger-toggle:checked~.menu-mobile {
+        display: flex;
+    }
+
+    .header__nav-list,
+    .header__nav-icons {
+        display: none;
+    }
+
+}

@@ -1,0 +1,48 @@
+.banner {
+    background: url(../img/bg.png) no-repeat center bottom / cover;
+    width: 100%;
+    height: clamp(16.875rem, 6.55rem + 51.63vw, 62.5rem);
+}
+
+.banner__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 0.661rem + 1.7vw, 2.5rem);
+    justify-content: center;
+}
+
+.banner__title {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: clamp(0.938rem, 0.103rem + 4.17vw, 4.625rem);
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.banner__desc {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: clamp(0.813rem, 0.657rem + 0.78vw, 1.5rem);
+    line-height: 100%;
+    color: var(--white);
+    max-width: 984px;
+}
+
+.banner__btn {
+    width: clamp(8.25rem, 6.383rem + 9.34vw, 16.5rem);
+    height: clamp(2.75rem, 2.241rem + 2.55vw, 5rem);
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: clamp(1rem, 0.887rem + 0.57vw, 1.5rem);
+    color: var(--white);
+    border: 2px solid var(--white);
+    background: none;
+    margin-top: clamp(1rem, 0.943rem + 0.28vw, 1.25rem);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner__btn:hover {
+   
+  backdrop-filter: blur(6px);
+}
