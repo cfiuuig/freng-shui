@@ -26,6 +26,10 @@
     line-height: 100%;
     color: var(--white);
     max-width: 984px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .banner__btn {
