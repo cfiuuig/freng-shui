@@ -1,51 +1,12 @@
-.shop {
-    margin: clamp(2.25rem, 0.779rem + 7.36vw, 8.75rem) 0;
-}
-
-.shop__wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
 
 .shop__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(0.25rem, -0.033rem + 1.41vw, 1.5rem);
+    gap: clamp(0.625rem, 0.131rem + 1.26vw, 1.5rem);
 }
 
-.product__card:nth-child(2) {
+.big {
     grid-row: span 2;
 }
 
-.product__card {
-    position: relative;
-    overflow: hidden;
-}
-
-.product__img img {
-    width: 100%;
-    display: block;
-}
-
-.product__card-content {
-    position: absolute;
-    inset: 0;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.product__card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-.product__card-desc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+@media screen and (max-width:624px) {}

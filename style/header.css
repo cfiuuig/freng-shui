@@ -1,16 +1,5 @@
-.header {
-    border: 1px solid var(--d-gray);
-    padding: 24px 0;
-}
 
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__nav-logo,
-.header__nav-item_link {
+.header__nav-logo {
     font-family: var(--ff);
     font-weight: 400;
     font-size: clamp(0.875rem, 0.734rem + 0.71vw, 1.5rem);
