@@ -9,4 +9,13 @@
     grid-row: span 2;
 }
 
-@media screen and (max-width:624px) {}
+@media screen and (max-width:1100px) {
+.shop__grid {
+grid-template-columns: 1fr;
+margin: auto;
+}
+
+.big{
+    order: 2;
+}
+}

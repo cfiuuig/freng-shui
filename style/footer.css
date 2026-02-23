@@ -1,10 +1,10 @@
 .footer {
-    padding: 134px 0;
+    padding: clamp(3.25rem, 2.09rem + 5.8vw, 8.375rem) 0;
 }
 
 .footer__nav-list {
     display: flex;
-    gap: clamp(3.625rem, -2.66rem + 16.06vw, 14.75rem);
+    gap: clamp(0.625rem, -2.572rem + 15.98vw, 14.75rem);
 }
 
 .footer__nav-contacts {
@@ -18,15 +18,13 @@
     gap: 40px;
 }
 
-@media screen and (max-width:700px) {
-    .footer__nav-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
 
 @media screen and (max-width:548px) {
     .footer__nav {
         flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
+
+
 }
